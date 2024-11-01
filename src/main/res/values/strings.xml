@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ContactsApplication</string>
+    <string-array name="phone_types_array">
+        <item>Residential</item>
+        <item>Commercial</item>
+        <item>Home</item>
+    </string-array>
+</resources>

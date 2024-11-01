@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddContactActivity">
+
+    <TextView
+        android:id="@+id/addContactHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Adicionar Contato"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/orange"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/addContactHeading"
+        android:layout_marginEnd="6dp" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Digite o nome"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/addContactHeading"
+        android:background="@drawable/orange_border"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="16dp"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:id="@+id/phoneContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleEditText"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/addPhoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneContainer"
+        android:text="Adicionar Telefone"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp" />
+
+</RelativeLayout>
